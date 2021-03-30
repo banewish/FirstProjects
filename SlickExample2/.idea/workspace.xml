@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77f70c02-8111-481e-831c-cfebf4e5c39b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../WebApi/src/main/scala/dao/PigDAO.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WebApi/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/../WebApi/build.sbt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../WebApi/src/main/scala/pigs/PigProject.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../WebApi/src/main/scala/pigs/PigProject.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../WebApi/src/main/scala/pigs/controller/PigController.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../WebApi/src/main/scala/pigs/controller/PigController.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../WebApi/src/main/scala/pigs/model/Pig.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../WebApi/src/main/scala/pigs/model/Pig.scala" afterDir="false" />
@@ -49,7 +51,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../WebApi" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">

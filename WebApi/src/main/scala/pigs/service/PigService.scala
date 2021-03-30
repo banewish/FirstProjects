@@ -1,6 +1,8 @@
 package pigs.service
 
+import pigs.DAO.PigDAO
 import pigs.model.Pig
+import slick.jdbc.PostgresProfile.api._
 
 import scala.concurrent.{ExecutionContext, Future}
 
@@ -8,11 +10,19 @@ trait PigService {
   def getPig(id: Int): Future[Pig]
 }
 
-class PigServiceImpl(implicit executionContext: ExecutionContext) extends PigService {
+class PigServiceImpl(pigDAO: PigDAO)(implicit executionContext: ExecutionContext) extends PigService {
+
+  val pigDatabase = Database.forURL(
+    url = "jdbc:postgresql://localhost:5432/pig",
+    user = "postgres",
+    password = "1234",
+    driver = "org.postgresql.Driver")
+
 
   override def getPig(id: Int): Future[Pig] = {
-    Future(Pig(Some(id), "Турбо свин", 300))
+    val optionPigInFuture: Future[Option[Pig]] = pigDatabase.run(pigDAO.findById(id))
+
+    optionPigInFuture.map(pigOpt => pigOpt.getOrElse(throw new Exception("no pig for id "+ id)))
   }
 
 }
-

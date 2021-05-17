@@ -1,0 +1,103 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(early(addPluginSbtFile="""C:\Users\1\AppData\Local\Temp\idea2.sbt"""), None, None)
+[debug] > Exec(addPluginSbtFile="""C:\Users\1\AppData\Local\Temp\idea2.sbt""", None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.4.3 (AdoptOpenJDK Java 11.0.9.1)
+[debug]       Load.loadUnit: plugins took 207.378ms
+[debug]       Load.loadUnit: defsScala took 0.6553ms
+[debug] [Loading] Scanning directory C:\Users\1\.sbt\1.0\plugins
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\1\.sbt\1.0\plugins, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 61.8574 ms
+[debug]           Load.resolveProject(global-plugins) took 110.7137ms
+[debug]         Load.loadTransitive: finalizeProject(Project(id global-plugins, base: C:\Users\1\.sbt\1.0\plugins, plugins: List(<none>))) took 232.8041ms
+[debug] [Loading] Done in C:\Users\1\.sbt\1.0\plugins, returning: (global-plugins)
+[debug]       Load.loadUnit: loadedProjectsRaw took 292.4732ms
+[debug]       Load.loadUnit: cleanEvalClasses took 0.6751ms
+[debug]     Load.loadUnit(file:/C:/Users/1/.sbt/1.0/plugins/, ...) took 526.816ms
+[debug]   Load.apply: load took 936.8904ms
+[debug]   Load.apply: resolveProjects took 17.7433ms
+[debug]   Load.apply: finalTransforms took 149.5337ms
+[debug]   Load.apply: config.delegates took 16.6533ms
+[debug]   Load.apply: Def.make(settings)... took 2292.4451ms
+[debug]   Load.apply: structureIndex took 325.8582ms
+[debug]   Load.apply: mkStreams took 3.8914ms
+[info] loading global plugins from C:\Users\1\.sbt\1.0\plugins
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Load.defaultLoad until apply took 7975.5619ms
+[debug]           Load.loadUnit: plugins took 80.1911ms
+[debug]           Load.loadUnit: defsScala took 0.0069ms
+[debug] [Loading] Scanning directory C:\scala\WebApi\project
+[debug]             Load.loadUnit: mkEval took 16.2096ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\scala\WebApi\project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 3.8851 ms
+[info] loading settings for project webapi-build from plugins.sbt,idea2.sbt ...
+[debug]               Load.resolveProject(webapi-build) took 15.3375ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id webapi-build, base: C:\scala\WebApi\project, plugins: List(<none>))) took 20.5749ms
+[debug] [Loading] Done in C:\scala\WebApi\project, returning: (webapi-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 342.3527ms
+[debug]           Load.loadUnit: cleanEvalClasses took 6.7954ms
+[debug]         Load.loadUnit(file:/C:/scala/WebApi/project/, ...) took 430.6983ms
+[debug]       Load.apply: load took 433.3528ms
+[debug]       Load.apply: resolveProjects took 0.1829ms
+[debug]       Load.apply: finalTransforms took 24.6147ms
+[debug]       Load.apply: config.delegates took 0.4966ms
+[debug]       Load.apply: Def.make(settings)... took 281.9858ms
+[debug]       Load.apply: structureIndex took 114.0856ms
+[debug]       Load.apply: mkStreams took 0.0047ms
+[info] loading project definition from C:\scala\WebApi\project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]     Load.loadUnit: plugins took 1734.5884ms
+[debug]     Load.loadUnit: defsScala took 0.0191ms
+[debug] [Loading] Scanning directory C:\scala\WebApi
+[debug]       Load.loadUnit: mkEval took 1.4562ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\scala\WebApi, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(com.permutive.sbtliquibase.SbtLiquibase), Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(com.permutive.sbtliquibase.SbtLiquibase),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(org.jetbrains.sbt.StructurePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(org.jetbrains.sbt.IdeaShellPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.jetbrains.sbt.StructurePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.jetbrains.sbt.IdeaShellPlugin))), Clause(And(Set(Atom(sbt.plugins.CorePlugin), Atom(sbt.plugins.JvmPlugin))),Set(Atom(org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,com.permutive.sbtliquibase.SbtLiquibase,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.SemanticdbPlugin,org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin,sbt.plugins.JUnitXmlReportPlugin,org.jetbrains.sbt.IdeaShellPlugin,org.jetbrains.sbt.StructurePlugin,sbt.plugins.MiniDependencyTreePlugin)
+[debug] Plugins.deducer#function took 4.1997 ms
+[info] loading settings for project webapi from build.sbt ...
+[debug]         Load.resolveProject(webapi) took 128.9524ms
+[debug]       Load.loadTransitive: finalizeProject(Project(id webapi, base: C:\scala\WebApi, plugins: List(<none>))) took 136.9919ms
+[debug] [Loading] Done in C:\scala\WebApi, returning: (webapi)
+[debug]     Load.loadUnit: loadedProjectsRaw took 471.8336ms
+[debug]     Load.loadUnit: cleanEvalClasses took 23.6142ms
+[debug]   Load.loadUnit(file:/C:/scala/WebApi/, ...) took 2233.0125ms
+[debug] Load.apply: load took 2235.7405ms
+[debug] Load.apply: resolveProjects took 0.2456ms
+[debug] Load.apply: finalTransforms took 95.9596ms
+[debug] Load.apply: config.delegates took 0.7903ms
+[debug] Load.apply: Def.make(settings)... took 240.6239ms
+[debug] Load.apply: structureIndex took 63.9303ms
+[debug] Load.apply: mkStreams took 0.0035ms
+[info] set current project to WebApi (in build file:/C:/scala/WebApi/)
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(notifyUsersAboutShell, None, None)
+[debug] > Exec(iflast shell, None, None)
+[debug] > Exec(; set ideaPort in Global := 49775 ; idea-shell, None, None)
+[debug] > Exec(set ideaPort in Global := 49775, None, None)
+[info] Defining Global / ideaPort
+[info] The new value will be used by Compile / compile, Test / compile
+[debug] Defining 
+[debug] 	Global / ideaPort
+[debug] 
+[debug] The new value will be used by 
+[debug] 	Compile / compile
+[debug] 	Test / compile
+[info] Reapplying settings...
+[info] set current project to WebApi (in build file:/C:/scala/WebApi/)
+[debug] > Exec(idea-shell, None, None)

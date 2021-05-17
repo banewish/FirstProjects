@@ -29,7 +29,6 @@ object ExampleFirstAndSecond extends App{
   case class C(a:String,b:Int,c:Double)
   case class Number(a:Int,b:String,c:Double,d1: D,c1: C,seq:Seq[Int])
 
-
   implicit val decoderD: Decoder[D] = deriveDecoder[D] // достает из джисона в кейс класс
   implicit val encoderD: Encoder[D] = deriveEncoder[D] // записываем в джисон
 
@@ -39,15 +38,10 @@ object ExampleFirstAndSecond extends App{
   implicit val decoderNumber: Decoder[Number] = deriveDecoder[Number] // достает из джисона в кейс класс
   implicit val encoderNumber: Encoder[Number] = deriveEncoder[Number] // записываем в джисон
 
-
-
   val d = D("jopa svnutri",123)
   val c = C("str",3,3.0)
   val number = Number(1,"jopa",2.76,d,c,Seq(1,2,3)).asJson
   println(number)
   println(number.as[Number])
-
-
-
 
 }

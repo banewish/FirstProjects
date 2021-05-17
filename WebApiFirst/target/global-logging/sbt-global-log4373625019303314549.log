@@ -1,0 +1,5 @@
+[debug] > Exec(liquibaseUpdate, None, None)
+[debug] Evaluating tasks: liquibaseUpdate
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[success] Total time: 6 s, completed 5 апр. 2021 г., 15:11:14
+[debug] > Exec(idea-shell, None, None)

@@ -1,0 +1,14 @@
+[debug] > Exec(liquibaseUpdate\, None, None)
+[error] Expected ID character
+[error] Not a valid command: liquibaseUpdate
+[error] Expected project ID
+[error] Expected configuration
+[error] Expected ':'
+[error] Expected key
+[error] Expected '::'
+[error] Expected whitespace character
+[error] Expected '/'
+[error] Expected end of input.
+[error] liquibaseUpdate\
+[error]                ^
+[debug] > Exec(idea-shell, None, None)

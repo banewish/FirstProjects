@@ -1,0 +1,103 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(early(addPluginSbtFile="""C:\Temp\idea.sbt"""), None, None)
+[debug] > Exec(addPluginSbtFile="""C:\Temp\idea.sbt""", None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.4.7 (Oracle Corporation Java 15.0.2)
+[debug]       Load.loadUnit: plugins took 186.0228ms
+[debug]       Load.loadUnit: defsScala took 0.4318ms
+[debug] [Loading] Scanning directory C:\Users\Mitsaki\.sbt\1.0\plugins
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\Mitsaki\.sbt\1.0\plugins, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 43.7403 ms
+[debug]           Load.resolveProject(global-plugins) took 77.6622ms
+[debug]         Load.loadTransitive: finalizeProject(Project(id global-plugins, base: C:\Users\Mitsaki\.sbt\1.0\plugins, plugins: List(<none>))) took 175.2611ms
+[debug] [Loading] Done in C:\Users\Mitsaki\.sbt\1.0\plugins, returning: (global-plugins)
+[debug]       Load.loadUnit: loadedProjectsRaw took 216.4541ms
+[debug]       Load.loadUnit: cleanEvalClasses took 0.7844ms
+[debug]     Load.loadUnit(file:/C:/Users/Mitsaki/.sbt/1.0/plugins/, ...) took 426.5748ms
+[debug]   Load.apply: load took 811.6991ms
+[debug]   Load.apply: resolveProjects took 12.536ms
+[debug]   Load.apply: finalTransforms took 136.6159ms
+[debug]   Load.apply: config.delegates took 14.4168ms
+[debug]   Load.apply: Def.make(settings)... took 6620.6725ms
+[debug]   Load.apply: structureIndex took 245.2946ms
+[debug]   Load.apply: mkStreams took 1.9629ms
+[info] loading global plugins from C:\Users\Mitsaki\.sbt\1.0\plugins
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Load.defaultLoad until apply took 10970.1772ms
+[debug]           Load.loadUnit: plugins took 65.6039ms
+[debug]           Load.loadUnit: defsScala took 0.0118ms
+[debug] [Loading] Scanning directory D:\SimpleExamples\WebApi\project
+[debug]             Load.loadUnit: mkEval took 14.0715ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in D:\SimpleExamples\WebApi\project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 3.568 ms
+[info] loading settings for project webapi-build from idea.sbt ...
+[debug]               Load.resolveProject(webapi-build) took 7.5741ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id webapi-build, base: D:\SimpleExamples\WebApi\project, plugins: List(<none>))) took 12.9614ms
+[debug] [Loading] Done in D:\SimpleExamples\WebApi\project, returning: (webapi-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 7001.3841ms
+[debug]           Load.loadUnit: cleanEvalClasses took 9.3517ms
+[debug]         Load.loadUnit(file:/D:/SimpleExamples/WebApi/project/, ...) took 7078.3285ms
+[debug]       Load.apply: load took 7082.1721ms
+[debug]       Load.apply: resolveProjects took 0.3085ms
+[debug]       Load.apply: finalTransforms took 32.5492ms
+[debug]       Load.apply: config.delegates took 0.5866ms
+[debug]       Load.apply: Def.make(settings)... took 221.0192ms
+[debug]       Load.apply: structureIndex took 111.5375ms
+[debug]       Load.apply: mkStreams took 0.0025ms
+[info] loading project definition from D:\SimpleExamples\WebApi\project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]     Load.loadUnit: plugins took 10400.1878ms
+[debug]     Load.loadUnit: defsScala took 0.0075ms
+[debug] [Loading] Scanning directory D:\SimpleExamples\WebApi
+[debug]       Load.loadUnit: mkEval took 0.5717ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in D:\SimpleExamples\WebApi, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(org.jetbrains.sbt.StructurePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(org.jetbrains.sbt.IdeaShellPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.jetbrains.sbt.StructurePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.jetbrains.sbt.IdeaShellPlugin))), Clause(And(Set(Atom(sbt.plugins.CorePlugin), Atom(sbt.plugins.JvmPlugin))),Set(Atom(org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.SemanticdbPlugin,org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin,sbt.plugins.JUnitXmlReportPlugin,org.jetbrains.sbt.IdeaShellPlugin,org.jetbrains.sbt.StructurePlugin,sbt.plugins.MiniDependencyTreePlugin)
+[debug] Plugins.deducer#function took 5.9551 ms
+[info] loading settings for project webapi from build.sbt ...
+[debug]         Load.resolveProject(webapi) took 45.7602ms
+[debug]       Load.loadTransitive: finalizeProject(Project(id webapi, base: D:\SimpleExamples\WebApi, plugins: List(<none>))) took 53.2806ms
+[debug] [Loading] Done in D:\SimpleExamples\WebApi, returning: (webapi)
+[debug]     Load.loadUnit: loadedProjectsRaw took 2983.1014ms
+[debug]     Load.loadUnit: cleanEvalClasses took 32.1083ms
+[debug]   Load.loadUnit(file:/D:/SimpleExamples/WebApi/, ...) took 13417.0703ms
+[debug] Load.apply: load took 13419.9776ms
+[debug] Load.apply: resolveProjects took 0.2753ms
+[debug] Load.apply: finalTransforms took 48.626ms
+[debug] Load.apply: config.delegates took 1.0581ms
+[debug] Load.apply: Def.make(settings)... took 192.8591ms
+[debug] Load.apply: structureIndex took 89.1016ms
+[debug] Load.apply: mkStreams took 0.0057ms
+[info] set current project to WebApi (in build file:/D:/SimpleExamples/WebApi/)
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(notifyUsersAboutShell, None, None)
+[debug] > Exec(iflast shell, None, None)
+[debug] > Exec(; set ideaPort in Global := 51374 ; idea-shell, None, None)
+[debug] > Exec(set ideaPort in Global := 51374, None, None)
+[info] Defining Global / ideaPort
+[info] The new value will be used by Compile / compile, Test / compile
+[debug] Defining 
+[debug] 	Global / ideaPort
+[debug] 
+[debug] The new value will be used by 
+[debug] 	Compile / compile
+[debug] 	Test / compile
+[info] Reapplying settings...
+[info] set current project to WebApi (in build file:/D:/SimpleExamples/WebApi/)
+[debug] > Exec(idea-shell, None, None)

@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/tapir.iml" filepath="$PROJECT_DIR$/.idea/modules/tapir.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tapir-build.iml" filepath="$PROJECT_DIR$/.idea/modules/tapir-build.iml" />
     </modules>
   </component>
 </project>

@@ -1,0 +1,3 @@
+[debug] > Exec(set play, None, None)
+[error] Type error in expression
+[debug] > Exec(idea-shell, None, None)

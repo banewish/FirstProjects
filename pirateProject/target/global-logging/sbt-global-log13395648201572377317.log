@@ -1,0 +1,62 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(early(addPluginSbtFile="""C:\Users\1\AppData\Local\Temp\idea.sbt"""), None, None)
+[debug] > Exec(addPluginSbtFile="""C:\Users\1\AppData\Local\Temp\idea.sbt""", None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.4.7 (AdoptOpenJDK Java 11.0.9.1)
+[debug]       Load.loadUnit: plugins took 213.258801ms
+[debug]       Load.loadUnit: defsScala took 0.4888ms
+[debug] [Loading] Scanning directory C:\Users\1\.sbt\1.0\plugins
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\1\.sbt\1.0\plugins, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 44.8268 ms
+[debug]           Load.resolveProject(global-plugins) took 87.8831ms
+[debug]         Load.loadTransitive: finalizeProject(Project(id global-plugins, base: C:\Users\1\.sbt\1.0\plugins, plugins: List(<none>))) took 194.2916ms
+[debug] [Loading] Done in C:\Users\1\.sbt\1.0\plugins, returning: (global-plugins)
+[debug]       Load.loadUnit: loadedProjectsRaw took 246.3305ms
+[debug]       Load.loadUnit: cleanEvalClasses took 0.7003ms
+[debug]     Load.loadUnit(file:/C:/Users/1/.sbt/1.0/plugins/, ...) took 480.694901ms
+[debug]   Load.apply: load took 902.702ms
+[debug]   Load.apply: resolveProjects took 14.254701ms
+[debug]   Load.apply: finalTransforms took 146.8614ms
+[debug]   Load.apply: config.delegates took 20.416399ms
+[debug]   Load.apply: Def.make(settings)... took 3361.9291ms
+[debug]   Load.apply: structureIndex took 210.041ms
+[debug]   Load.apply: mkStreams took 3.2268ms
+[info] loading global plugins from C:\Users\1\.sbt\1.0\plugins
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Load.defaultLoad until apply took 9647.7566ms
+[debug]           Load.loadUnit: plugins took 39.900401ms
+[debug]           Load.loadUnit: defsScala took 0.013499ms
+[debug] [Loading] Scanning directory C:\scala\pirateProject\project
+[debug]             Load.loadUnit: mkEval took 13.373699ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\scala\pirateProject\project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 12.523401 ms
+[info] loading settings for project pirateproject-build from idea.sbt ...
+[debug]               Load.resolveProject(pirateproject-build) took 25.375599ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id pirateproject-build, base: C:\scala\pirateProject\project, plugins: List(<none>))) took 43.145ms
+[debug] [Loading] Done in C:\scala\pirateProject\project, returning: (pirateproject-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 7429.3645ms
+[debug]           Load.loadUnit: cleanEvalClasses took 12.357399ms
+[debug]         Load.loadUnit(file:/C:/scala/pirateProject/project/, ...) took 7484.131101ms
+[debug]       Load.apply: load took 7490.080799ms
+[debug]       Load.apply: resolveProjects took 0.225601ms
+[debug]       Load.apply: finalTransforms took 31.708801ms
+[debug]       Load.apply: config.delegates took 0.554301ms
+[debug]       Load.apply: Def.make(settings)... took 302.845399ms
+[debug]       Load.apply: structureIndex took 64.4532ms
+[debug]       Load.apply: mkStreams took 0.0062ms
+[info] loading project definition from C:\scala\pirateProject\project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true

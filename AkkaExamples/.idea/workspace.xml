@@ -29,39 +29,39 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../DVD" />
   </component>
-  <component name="RunManager" selected="Application.FoodMain">
-    <configuration name="AskTest" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="Actor.AskTest" />
+  <component name="RunManager" selected="Application.Test5">
+    <configuration name="Test2" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="Actor.Test2" />
       <module name="AkkaExamples" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AskTestPig" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="Actor.AskTestPig" />
+    <configuration name="Test3" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="Actor.Test3" />
       <module name="AkkaExamples" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FoodMain" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="Actor.FoodMain" />
+    <configuration name="Test4" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="Actor.Test4" />
       <module name="AkkaExamples" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PigRaceMain" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="Actor.PigRaceMain" />
+    <configuration name="Test5" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="Actor.Test5" />
       <module name="AkkaExamples" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ZabegSvinkiMain" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="Actor.ZabegSvinkiMain" />
+    <configuration name="ssasgeyo" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="ssasgeyo" />
       <module name="AkkaExamples" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -69,11 +69,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.FoodMain" />
-        <item itemvalue="Application.ZabegSvinkiMain" />
-        <item itemvalue="Application.PigRaceMain" />
-        <item itemvalue="Application.AskTestPig" />
-        <item itemvalue="Application.AskTest" />
+        <item itemvalue="Application.Test5" />
+        <item itemvalue="Application.Test4" />
+        <item itemvalue="Application.Test3" />
+        <item itemvalue="Application.Test2" />
+        <item itemvalue="Application.ssasgeyo" />
       </list>
     </recent_temporary>
   </component>

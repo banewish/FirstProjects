@@ -3,24 +3,41 @@ package controllers
 import javax.inject._
 import play.api._
 import play.api.mvc._
-import form.Form
+import play.api.data.Form
+import play.api.data.Forms._
 
-/**
- * This controller creates an `Action` to handle HTTP requests to the
- * application's home page.
- */
 @Singleton
-class HomeController @Inject()(val controllerComponents: ControllerComponents) extends BaseController {
+class HomeController @Inject()(val controllerComponents: ControllerComponents) extends BaseController with play.api.i18n.I18nSupport{
 
-  /**
-   * Create an Action to render an HTML page.
-   *
-   * The configuration in the `routes` file means that this method
-   * will be called when the application receives a `GET` request with
-   * a path of `/`.
-   */
   def index() = Action { implicit request: Request[AnyContent] =>
-    Ok(views.html.index())
+    val passwordForm: Form[UserData] = Form(
+          mapping(
+            "password" -> number(min = 4, max = 15)
+          )(UserData.apply)(UserData.unapply)
+    )
+      passwordForm.bindFromRequest.fold(
+      formWithErrors => {
+        // binding failure, you retrieve the form containing errors:
+        BadRequest(views.html.index(formWithErrors))
+       },
+        UserData => {
+//          val newPassword = models.Password(UserData.password)
+          Redirect(routes.HomeController.index())
+        }
+      )
+
+    Ok(views.html.index(passwordForm))
   }
 
+  @Singleton
+  class Relative @Inject() (cc: ControllerComponents) extends AbstractController(cc) {
+    def helloview() = Action { implicit request =>
+      Ok(views.html.hello()) // видимо нужно создать ещё что-то
+    }
+    def hello(password: Int) = Action {
+      Ok(s"Hi, your password is good")
+    }
+
+  }
 }
+case class UserData(password: Int)

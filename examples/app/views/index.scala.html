@@ -1,16 +1,11 @@
 @import play.api.data.Form
 @import helper._
-@import controllers.UserData
 @import play.api.mvc.{RequestHeader}
 @import play.api.i18n.{MessagesProvider}
-@(form: Form[UserData])(implicit request: RequestHeader, messagesProvider: MessagesProvider)
+@()(implicit request: RequestHeader, messagesProvider: MessagesProvider)
 
 @main("Welcome to Play") {
   <h1>Welcome to Play1!</h1>
 
-<!-- Тут вроде как тоже нужно подключить так же как и строчка ниже-->
-  @helper.form(action = routes.HomeController.index){
-    @helper.inputText(form("password"))
-<input type="submit" name="submit">
-  }
+
 }

@@ -1,0 +1,20 @@
+@import play.api.data.Form
+@import helper._
+@import play.api.mvc.{RequestHeader}
+@import play.api.i18n.{MessagesProvider}
+@import controllers.UserDataForm
+@(userFormConstraints: Form[UserDataForm.UserData])(implicit messages: Messages)
+
+@main("Registration") {
+<br>
+<h1>USER PANEL</h1>
+
+@form(action = routes.HomeController.formPost()) {
+@inputPassword(userFormConstraints("password"))
+
+<input type="submit" value="Submit">
+}
+
+<p><a href="http://localhost:9000/user">Click to back</a></p>
+
+}

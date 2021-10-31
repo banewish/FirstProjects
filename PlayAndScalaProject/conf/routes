@@ -6,6 +6,7 @@
 # An example controller showing a sample home page
 GET     /user                            controllers.HomeController.index()
 GET     /user/create                     controllers.HomeController.validate()
+GET     /user/getPasswords               controllers.HomeController.getPasswords
 +nocsrf
 POST    /user/create                     controllers.HomeController.formPost()
 

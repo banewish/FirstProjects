@@ -1,11 +1,12 @@
 package models
 
+import play.api.libs.json.{Json, OFormat}
 
 
 case class PasswordHash(password_hash: String) {
+  implicit val passwordFormat: OFormat[PasswordHash] = Json.format[PasswordHash]
 
-
-  def passwordHash(s: String): String= {
+  def passwordHash(s: String): String = {
     import java.security.MessageDigest
     import java.math.BigInteger
     val md = MessageDigest.getInstance("MD5")

@@ -10,7 +10,7 @@ import scala.concurrent.{Future, ExecutionContext}
 class PasswordRepository @Inject()(dbConfigProvider: DatabaseConfigProvider)(implicit ec: ExecutionContext) {
 
   private val dbConfig = dbConfigProvider.get[JdbcProfile]
-
+  import controllers.HomeController
   import dbConfig._
   import profile.api._
 
@@ -24,14 +24,20 @@ class PasswordRepository @Inject()(dbConfigProvider: DatabaseConfigProvider)(imp
   private val passwords = TableQuery[PasswordTable]
 
 
-//  def create(password_hash: String): Future[PasswordHash] = db.run {
-//    (passwords.map(p => (p.password_hash))
-//
-//      returning passwords.map(_.password_hash) += PasswordHash(password_hash)
-//  }
+  def create(password_hash: String): Future[Int] = db.run {
+    val queryForCreate =
+    passwords.map(p => (p.password_hash)) += password_hash
+
+    queryForCreate
+  }
 
   def list(): Future[Seq[PasswordHash]] = db.run {
     passwords.result
 
   }
+  def delete() : Future[Int] = db.run {
+    passwords.filter(p => p.password_hash === "PasswordHash(12345676)")
+      .delete
+  }
+
 }

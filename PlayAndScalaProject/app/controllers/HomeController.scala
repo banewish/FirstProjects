@@ -14,6 +14,7 @@ class HomeController @Inject()(repo: PasswordRepository, cc: MessagesControllerC
 
   import models.PasswordHash._
   import UserDataForm._
+  import models.PasswordRepository
 
   def index() = Action { implicit request: Request[AnyContent] =>
     Ok(views.html.index())
@@ -23,24 +24,33 @@ class HomeController @Inject()(repo: PasswordRepository, cc: MessagesControllerC
     Ok(views.html.registration(userFormConstraints))
   }
 
-  def formPost() = Action { implicit request: MessagesRequest[AnyContent] =>
+  def formPost() = Action.async { implicit request =>
     userFormConstraints.bindFromRequest.fold(
       formWithErrors => {
-        BadRequest(views.html.registration(formWithErrors))
+        Future.successful(Ok(views.html.registration(formWithErrors)))
       },
       formData => {
-        Ok(formData.toString)
+        repo.create(formData.password).map { _ =>
+          Redirect(routes.HomeController.index)
+        }
       }
     )
   }
 
-  def getPasswords = Action.async { implicit request =>
+  def getPassword = Action.async { implicit request =>
     repo.list().map { passwords =>
       Ok(Json.toJson(passwords.toString()))
     }
   }
+
+  def deletePassword = Action.async { implicit request =>
+    repo.delete().map { passwords =>
+      Ok(Json.toJson(passwords.toString()))
+    }
+  }
 }
-    // получить, хешировать, отправить на сервис и проверить наличие в базе
-    // если есть - ошибка, если нет - добавить в базу
+
+// получить, хешировать, отправить на сервис и проверить наличие в базе
+// если есть - ошибка, если нет - добавить в базу
 
 

@@ -36,7 +36,7 @@ class PasswordRepository @Inject()(dbConfigProvider: DatabaseConfigProvider)(imp
 
   }
   def delete() : Future[Int] = db.run {
-    passwords.filter(p => p.password_hash === "PasswordHash(12345676)")
+    passwords.filter(p => p.password_hash === "12345676")
       .delete
   }
 
